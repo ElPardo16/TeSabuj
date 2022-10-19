@@ -136,6 +136,7 @@ nav a, .ico-menu a{
 }
 .p-con{
     padding: 50px 150px 60px;
+    justify-items: center;
 }
 .p-con > div{
     position: relative;
@@ -285,7 +286,8 @@ nav a, .ico-menu a{
 .brand{
     padding: 100px 110px;
     display: grid;
-    grid: 1fr / repeat(5, 1fr)
+    grid: 1fr / repeat(5, 1fr);
+    overflow: hidden;
 }
 .f-m{
     padding: 50px 150px;

@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--lora);
+}
+:root{
+    --txt-negro: #333;
+    --txt-gris: #575757;
+    --txt-verde: #529F0F;
+    --lora: 'Lora', serif;
+    --playfair: 'Playfair Display', serif;
+    --work-sans: 'Work Sans', sans-serif;
+}
+body{
+    padding: 0 40px;
+}
+header, section, .f-s{
+    padding: 20px 150px;
+}
+h1,h2,h3{
+    font-family: var(--playfair);
+    color: var(--txt-negro)
+}
+h2{
+    font-size: 2rem;
+}
+header{
+    position: sticky;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--txt-negro);
+    gap: 20px;
+}
+header > a{
+    order: -1;
+    margin-right: auto ;
+}
+nav a, .ico-menu a{
+    padding: 10px 20px;
+    color: var(--txt-negro);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: clamp(.6rem, 1vw, 1.2rem);
+    font-family: var(--work-sans);
+}
+.ico-menu, .ico-menu a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.ico-menu a{
+    gap: 5px;
+    padding: 0;
+}
+.down{
+    font-size: 1.5em !important;
+}
+.cart{
+    transform: scaleX(-1);
+}
+#menu{
+    border: var(--txt-negro) 1px solid;
+    padding: 3px;
+    display: none;
+}
+.banner{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(./img/breadcrumb.jpg) no-repeat center;
+    background-size: cover;
+    color: white;
+}
+.banner h1{
+    color: white;
+}
+.f-m{
+    padding: 50px 150px;
+}
+.f-m{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    width: 100%;
+    background: #f8f8f8;
+}
+.f-m h3{
+    margin-bottom: 30px;
+}
+.f-m ul{
+    padding: 0;
+    list-style: none;
+}
+.f-m ul li{
+    margin-bottom: 20px;
+    color: var(--txt-gris);
+}
+.f-s{
+    background: #f3f3f3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 480px){
+    header img{
+        margin: auto;
+        margin-left: 0;
+    }
+    nav{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    footer{
+        padding: 0;
+    }
+    .f-m{
+        padding: 50px 20px;
+    }
+    .f-s{
+        background: #f3f3f3;
+        padding: 20px 0;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+}

@@ -15,14 +15,14 @@
 <body>
     <header>
         <nav>
-            <a href="">Home</a>
+            <a href="../index.html">Home</a>
             <a href="">About</a>
             <a href="">Blog</a>
             <a href="">Pages</a>
             <a href="">Contact</a>
             <span>|</span>
         </nav>
-        <a href=""><img src="./img/logo.png" alt="Logo"></a>
+        <a href="../index.html"><img src="./img/logo.png" alt="Logo"></a>
         <div class="ico-menu">
             <a href="#">Usd <span class="material-symbols-outlined down">expand_more</span></a>
             <span class="material-symbols-outlined cart">shopping_cart</span>
@@ -35,7 +35,7 @@
     </section>
     <section class="p-view">
         <div class="images discount" data-text="-29%">
-            <img src="./img/product-1.jpg" alt="Imagen del producto" srcset="">
+            <img id="p-img" src="./img/product-1.jpg" alt="Imagen del producto" srcset="">
             <div class="carousel">
                 <span class="material-symbols-outlined">chevron_left</span>
                 <img src="./img/product-1.jpg" alt="" srcset="">
@@ -46,7 +46,7 @@
             </div>
         </div>
         <div class="p-text">
-            <h2>Nature Close Tea</h2>
+            <h2 id="p-t"></h2>
             <div class="review">
                 <div class="stars">
                     <span id="star" class="material-symbols-outlined v">star</span>
@@ -190,5 +190,6 @@
             <img src="./img/payment.png" alt="">
         </div>
     </footer>
+    <script src="./product.js"></script>
 </body>
 </html>

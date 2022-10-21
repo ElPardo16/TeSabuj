@@ -298,6 +298,9 @@ form + p{
     position: relative;
     width: 15vw;
 }
+.p-con > div:hover{
+    cursor: pointer;
+}
 .p-con img{
     width: 100%;
     margin-bottom: 30px;

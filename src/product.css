@@ -89,6 +89,7 @@ nav a, .ico-menu a{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(200px, 90% ) , 1fr));
     gap: 30px;
+    align-items: center;
 }
 .images{
     position: relative;
@@ -227,6 +228,98 @@ form + p{
 .social a:nth-child(4){
     background: #ce2021;
 }
+.des{
+    margin-top: 40px;
+    display: grid;
+    gap: 20px;
+}
+.des > p:first-of-type{
+    margin-top: 20px;
+}
+.des *:not(:first-child){
+    line-height: 30px;
+}
+.des ul{
+    list-style: "- ";
+    padding-left: 12px;
+}
+.tabs{
+    justify-self: center;
+    display: grid;
+    grid: 1fr / repeat(3, 1fr);
+    gap: 10px;
+    place-items: center;
+    font-size: clamp(.9rem, 2vw, 1.3rem);
+    text-align: center;
+}
+.tabs a{
+   text-decoration: none;
+   color: var(--txt-gris);
+   padding: 10px 20px 15px;
+}
+.tabs .selected{
+    position: relative;
+    color: var(--txt-verde);
+}
+.selected::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    margin: auto auto 0;
+    width: 80%;
+    height: 3px;
+    background: var(--txt-verde);
+}
+.p-con{
+    padding: 50px 0px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    align-content: center;
+    padding: 50px 0 60px;
+    justify-items: center;
+}
+.products{
+    text-align: center;
+}
+.products h2{
+    padding: 20px 0;
+    font-family: var(--playfair);
+    text-align: left;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    color: var(--txt-gris);
+}
+.products > p{
+    width: 40%;
+    margin: auto;
+}
+.p-con > div{
+    position: relative;
+    width: 15vw;
+}
+.p-con img{
+    width: 100%;
+    margin-bottom: 30px;
+    border: #e4e4e4 solid 1px;
+}
+.p-con p{
+    text-align: left;
+    font-size: 1.1rem;
+    font-family: var(--work-sans);
+    font-weight: bold;
+    color: var(--txt-gris);
+    margin-bottom: 10px;
+}
+.p-con p:last-child{
+    font-size: .8rem;
+    color: var(--txt-negro);
+}
+.p-con p span{
+    color: var(--txt-gris);
+    font-family: var(--work-sans);
+    text-decoration: line-through;
+}
 .f-m{
     padding: 50px 150px;
 }
@@ -267,6 +360,22 @@ form + p{
     }
     #menu{
         display: block;
+    }
+    .products h2{
+        text-align: center;
+        padding-top: 50px;
+    }
+    .products > p{
+        width: auto;
+    }
+    .p-con{
+        padding: 50px 0px 80px;
+    }
+    .p-con > div{
+        width: auto;
+    }
+    .p-con > div:not(:first-child){
+        display: none;
     }
     footer{
         padding: 0;

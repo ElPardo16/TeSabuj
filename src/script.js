@@ -11,6 +11,5 @@ function ProductPage(obj){
 }
 function ProductPage2(obj){
     saveData(obj)
-    location.reload()
-    window.scrollTo(0,0)
+    window.location = window.location
 }
